@@ -16,6 +16,7 @@ public class FileNotFoundEx {
 
 		} catch (FileNotFoundException e) {
 
+			//throwing exception
 			System.out.println(e.getMessage());
 		}
 
