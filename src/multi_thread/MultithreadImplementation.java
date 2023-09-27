@@ -4,7 +4,7 @@ class MThread implements Runnable {
 
 	public void run() {
 		try {
-			System.out.println("Thread" + Thread.currentThread().getId() + " is running");
+			System.out.println("Thread is running");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -21,9 +21,9 @@ public class MultithreadImplementation {
 
 			// creating thread reference object
 
-			Thread th = new Thread(new MThread());
+			MThread th = new MThread();
 
-			th.start();
+			th.run();
 		}
 	}
 }

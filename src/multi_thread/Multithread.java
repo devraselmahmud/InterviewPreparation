@@ -8,7 +8,7 @@ class MultiThreading extends Thread {
 	{	
 		try 
 		{
-			System.out.println("Thread " + Thread.currentThread().getId() + " is running");
+			System.out.println("Thread is running");
 		} 
 		catch (Exception e) 
 		{
@@ -30,7 +30,7 @@ public class Multithread {
 			
 			// starting the thread
 			
-			th.start();
+			th.run();
 		}
 	}
 }
